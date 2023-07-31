@@ -1,0 +1,209 @@
+<!-- 
+    Drop Shadow - div
+    Clip -applied only to absolutely positioned(position:fixed/absolute).
+    use of px, %, cm etc.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>HTML & CSS-3</title>
+    <style>
+        .shadow {
+            border: 2px solid;
+            box-shadow: green 5px 10px 5px 10px;
+            /* box-shadow: green 5px 10px 5px 10px inset; */
+            /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
+            ;
+        }
+
+        .clip {
+            position: absolute;
+            background-color: yellow;
+            width: 100px;
+            clip: rect(10px, 100px, 50px, 10px);
+        }
+.container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+  /* To illustrate the container boundaries */
+  overflow: hidden;
+}
+
+/* You can change the 'overflow' property to other values to see the differences. */
+
+.container-scroll {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+  /* To illustrate the container boundaries */
+  overflow: scroll;
+}
+
+/* You can change the 'overflow' property to other values to see the differences. */
+
+.content-scroll-bar {
+  width: 300px;
+  /* Wider than the container */
+  height: 150px;
+  /* Taller than the container */
+  background-color: #f0f0f0;
+}
+
+.container-auto {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+  /* To illustrate the container boundaries */
+  overflow: auto;
+}
+
+/* You can change the 'overflow' property to other values to see the differences. */
+
+.content-auto-bar {
+  width: 300px;
+  /* Wider than the container */
+  height: 150px;
+  /* Taller than the container */
+  background-color: #f0f0f0;
+}
+
+.container-visible {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+  /* To illustrate the container boundaries */
+  overflow: visible;
+}
+
+/* You can change the 'overflow' property to other values to see the differences. */
+
+.content-visible-bar {
+  width: 300px;
+  /* Wider than the container */
+  height: 100px;
+  /* Taller than the container */
+  background-color: #f0f0f0;
+}
+    </style>
+</head>
+
+<body>
+
+<div>
+    <h2>overflow - hidden</h2>
+
+    <div class="container">
+  <div class="content">This is some long content that will overflow hidden the container.</div>
+</div><br>
+
+    <h2>overflow - scroll</h2>
+    <div class="container-scroll">
+  <div class="content-scroll-bar">This is some long content that will overflow Scroll the container.</div><br>
+</div><br>
+
+    <h2>overflow - auto</h2>
+<div class="container-atuo">
+  <div class="content-auto-bar">This is some long content that will auto Scroll the container.</div><br>
+</div><br>
+ <h2>overflow - visible</h2>
+<div class="container-visible">
+  <div class="content-visible-bar">This is some long content that will visible Scroll the container.</div><br>
+</div>
+
+</div><br><br>
+
+<div class="body">
+    
+  <div class="dropbox-container">
+    <div class="dropbox">
+      <h2>Drag and Drop Files Here</h2>
+      <p>or</p>
+      <input type="file" id="fileInput" multiple>
+      <label for="fileInput" class="browse-btn">Browse Files</label>
+    </div>
+  </div>
+</div><br>
+<div>
+  <h2>Measurements</h2>  
+<div class="measurement-example">
+  This is a div with various measurement units.
+</div>
+</div><br>
+
+<div>
+    <h2>Fonts</h2>
+     <h1 class="custom-font">Custom Font Example</h1>
+  <p class="serif-font">This paragraph uses a serif font.</p>
+  <p class="sans-serif-font">This paragraph uses a sans-serif font.</p>
+  <p class="monospace-font">This paragraph uses a monospace font.</p>
+
+</div><br>
+
+<div>
+    <h2>Icons</h2>
+    <p>In CSS, you can use icons from icon fonts or inline SVGs to add visual elements to your website without relying on image files. Here's an example of how to use icons in CSS using icon fonts and inline SVGs</p>
+     <div class="icon-font-example">
+    <i class="fas fa-heart"></i> This is a heart icon from Font Awesome.
+  </div>
+
+   <div class="inline-svg-example">
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2c1.654 0 3 1.346 3 3 0 4.484-5.919 8.966-9 13-3.081-4.034-9-8.516-9-13 0-1.654 1.346-3 3-3 1.878 0 3.496 1.308 3.9 3h3.2c.404-1.692 2.022-3 3.9-3z"/>
+    </svg> This is a heart icon in inline SVG format.
+  </div>
+
+</div><br>
+
+<div class="container-query">
+    <h1>Responsive Design Example</h1>
+    <p>This is a responsive design demonstration.</p>
+  </div>
+
+
+
+    <h1>
+        box shadow
+    </h1>
+    <div class="shadow">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium beatae ipsam iusto? Velit, sed cupiditate
+        nulla minima officiis excepturi ut aperiam vel amet in blanditiis repellendus tempore natus eveniet iure?s
+    </div>
+    <br><br>
+    <hr>
+    <div class="clip">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt doloremque ea ut corrupti quis vel
+        necessitatibus exercitationem consectetur quod quibusdam ratione blanditiis, ad labore, et iusto quas aliquid
+        cumque. Accusantium.
+    </div>
+    <br><br>
+    <hr>
+    <div>
+        <!-- 
+        centimeter
+        millimeter
+        px - relative to view device (1px = 1/96th of 1in)
+        pt - 1pt = 1/72 of 1in
+        em - relative to font-size of element(2em means 2 times the size)
+        rem - relative to font-size of root element
+        % - relative to parent element
+        in - 1in = 96px  -->
+        <span style="font-size: 16px;line-height: 2em;">
+            guvi Geek pvt ltd
+        </span>
+        <hr>
+        <span style="font-size: 2rem;border:1px solid;">
+            Guvi Geek pvt ltd
+        </span>
+        <hr>
+        <span style="font-size: 250%;border: 1px solid black;">
+            Guvi Geek pvt ltd
+        </span>
+    </div>
+</body>
+
+</html>

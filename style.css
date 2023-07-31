@@ -1,0 +1,175 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.dropbox-container {
+  background-color: #ffffff;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropbox h2 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.dropbox p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.dropbox input[type="file"] {
+  display: none;
+}
+
+.dropbox label.browse-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007ee5;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dropbox label.browse-btn:hover {
+  background-color: #005aa1;
+}
+
+.measurement-example {
+  width: 300px; /* Using pixels (px) */
+  height: 200px; /* Using pixels (px) */
+  border: 2px solid #000; /* Using pixels (px) */
+  padding: 20px; /* Using pixels (px) */
+  margin: 30px; /* Using pixels (px) */
+  font-size: 24px; /* Using pixels (px) */
+  line-height: 1.5; /* Unitless, line height is relative to the font size */
+}
+
+@media (max-width: 600px) {
+  .measurement-example {
+    width: 100%; /* Using percentage (%) */
+    height: 150px; /* Using pixels (px) */
+  }
+}
+
+@media (max-width: 400px) {
+  .measurement-example {
+    padding: 10%; /* Using percentage (%) */
+    margin: 5vw; /* Using viewport width (vw) */
+    font-size: 16px; /* Using pixels (px) */
+  }
+}
+
+
+/* Define the custom font using @font-face */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('path-to-your-custom-font.ttf') format('truetype');
+}
+
+/* Apply styles to different elements */
+h1.custom-font {
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-size: 36px;
+  color: #007bff;
+}
+
+p.serif-font {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+p.sans-serif-font {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+}
+
+p.monospace-font {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.icon-font-example {
+  font-size: 24px;
+  color: red;
+}
+.inline-svg-example {
+  font-size: 24px;
+  color: red;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+
+
+.container-query {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #007bff;
+}
+
+p {
+  color: #333333;
+}
+
+/* Media Query for Small Screens (Mobile Devices) */
+@media (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Media Query for Medium and Large Screens (Tablets and Desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Media Query for Extra Large Screens (Large Desktops) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
